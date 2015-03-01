@@ -145,7 +145,8 @@ class Messages
 
 	def conflict
 		["\n",
-		 "You already have a ship there!\n".red]
+		 center("You already have a ship there!").red,
+		 "\n"]
 	end
 
 	def shot_out_of_bounds
