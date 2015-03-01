@@ -2,7 +2,7 @@ require 'colorize'
 
 class Messages
 
-	def center(string)
+	def center(string = "")
 		string.center(37)
 	end
 
@@ -108,8 +108,8 @@ class Messages
 	def bad_coord_low_letter_first
 		["\n",
 		 center("Bad coordinate!").red,
-		 center("Enter earlier letter first.").red, 
-		 center("\n","(e.g. A before B)").red]
+		 center("Enter earlier letter first.").red,
+		 center("(e.g. A before B)").red]
 	end
 
 	def bad_coord_low_number_first

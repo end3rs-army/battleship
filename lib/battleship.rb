@@ -68,9 +68,9 @@ class Battleship
 	end
 
 	def user_input
-		input = gets.chomp
+		input = gets.chomp.downcase
 		input = " " if input == ""
-		enemy.god_mode = true if input.upcase == "GOD"
+		enemy.god_mode = true if input == "god"
 		input
 	end
 
