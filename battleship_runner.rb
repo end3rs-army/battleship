@@ -1,4 +1,4 @@
-require './battleship'
+require_relative './lib/battleship'
 
 class Runner
 

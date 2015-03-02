@@ -21,6 +21,7 @@ class Messages
 		["==== S E T   Y O U R   S H I P S ====",
 		 "\n",
 		 center("[example coordinate: 'A1']")]
+		 #`say set your ships`
 	end
 
 	def instructions
@@ -86,6 +87,7 @@ class Messages
 	def quit
 		["\n",
 		 center("YOU ARE A QUITTER!!!").red]
+		 #`say no one likes a quitter`
 	end
 
 	def setup_options
@@ -150,18 +152,21 @@ class Messages
 	end
 
 	def shot_out_of_bounds
+		#`say total miss, not good`
 		["\n",
 		 center("*** T O T A L   M I S S ***")]
-	end
+	end 
 
 	def hit
 		["\n",
 		 center("*** D I R E C T   H I T ***")]
+		# `say its a hit`
 	end
 
 	def miss
 		["\n",
 		 center("*** M I S S ***")]
+		 #`say its a miss`
 	end
 
 	def blank
@@ -180,6 +185,7 @@ class Messages
 	 	["\n",
 	 	 center("WINNER!!").green,
 	 	 center("YOU SUNK MY BATTLESHIP").green]
+	 	 `say winner winner chicken dinner`
 	end
 
 	def lose
@@ -187,16 +193,19 @@ class Messages
 		 center("LOSER!!").red,
 		 center("ALL YOUR BASE ARE BELONG TO US.").red,
 		 "\n"]
+		 #`say that was a major defeat`
 	end
 
 	def computer_turn
 		["\n",
 		 center("E N E M Y   S H O O T I N G").red]
+		 #`say enemy shooting`
 	end
 
 	def you_turn
 		["\n",
 		 center("Y O U R   T U R N").green]
+		 #`say ready your guns`
 	end
 
 	def maximize_experience
